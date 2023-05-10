@@ -9,6 +9,10 @@ const {
     getOneUser
     } = require('../utils/users.controller');
 
+///
+router.get('/', (req, res) => {
+    res.send('Welcome to my API');
+});
 
 // Get all users
 router.get('/users', getAllUsers);
